@@ -1,0 +1,81 @@
+/* Styling theme 3 */
+
+
+/* Backgrounds */
+$theme3-background-color-violet1: hsl(268, 75%, 9%);
+$theme3-background-color-violet2: hsl(268, 71%, 12%);
+
+/* Keys */
+$theme3-key-color-dark-violet: hsl(281, 89%, 26%);
+$theme3-key-shadow-color-dark-violet: hsl(285, 91%, 52%);
+
+$theme3-key-color-cyan: hsl(176, 100%, 44%);
+$theme3-key-shadow-color-cyan: hsl(177, 92%, 70%);
+
+$theme3-key-color-dark-violet2: hsl(268, 47%, 21%);
+$theme3-key-sahdow-color-dark-violet2: hsl(290, 70%, 36%);
+
+/* Text */
+$theme3-text-yellow: hsl(52, 100%, 62%);
+$theme3-text-dark-blue: hsl(198, 20%, 13%);
+$theme3-text-white: hsl(0, 0%, 100%);
+
+.theme3 {
+    /* color: $theme3-background-color-violet1; */
+    background-color: $theme3-background-color-violet1;
+    /* .main {
+        .content {
+            .header {
+                .theme-toggle-wrapper {
+                   .theme-toggle {
+                        background-color: $theme1-background-color-dark-blue2;
+                        .theme-toggle-btn {
+                            background-color: $theme1-key-color-red;
+                            &#toggle-theme-1 {
+                                
+                            }
+                        }
+
+                   } 
+                }
+            }
+            .calc {
+                .calc-display {
+                    background-color: $theme1-background-color-dark-blue3;
+                }
+                .calc-keys {
+                    background-color: $theme1-background-color-dark-blue2;
+                    .calc-key {
+                        background-color: $theme1-key-color-grey;
+                        border-color: $theme1-key-shadow-color-grey;
+                        color: $theme1-text-grey-blue;
+                        
+                        &#del {
+                            background-color: $theme1-key-color-blue;
+                            border-color: $theme1-key-shadow-color-blue;
+                            color: $theme1-text-white;
+                        }
+                        &#reset {
+                            background-color: $theme1-key-color-blue;
+                            border-color: $theme1-key-shadow-color-blue;
+                            color: $theme1-text-white;
+                        }
+
+                        &#equal {
+                            background-color: $theme1-key-color-red;
+                            border-color: $theme1-key-shadow-color-red;
+                            color: $theme1-text-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        font-size: 1.2rem;
+        a {
+            color: $theme1-key-color-red;
+            
+        } 
+    } */
+}

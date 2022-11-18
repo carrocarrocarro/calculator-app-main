@@ -1,0 +1,166 @@
+*, html, body {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    font-size: 2rem;
+    padding:0.5em;
+    @media (min-width:500px) {
+        padding:1em;
+    }
+    .content {
+        max-width:600px;
+        margin: auto;
+    
+        .header {
+            padding: 1em 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h1 {
+                margin: 0;
+                font-size: 2rem;
+            }
+            .theme-toggle-wrapper {
+                display: flex;
+                align-items: flex-end;
+                gap:0.5em;
+                font-size: 0.8rem;
+                text-transform: uppercase;
+                p {
+                    margin: 0 0 0.2em;
+                    letter-spacing: 1px;
+                }
+
+                .theme-toggle-name {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0 0.5em 0.2em 0.5em;
+                    p {
+                        margin: 0;
+                    }
+                }
+
+                .theme-toggle {
+                    display: flex;
+                    justify-content: center;
+                    border-radius: 50px;
+                    padding:0.3em;
+                    gap:0.5em;
+                    .theme-toggle-btn {
+                        height: 15px;
+                        width: 15px;
+                        appearance: none;
+                        border-radius: 50%;
+                        opacity: 0;
+                        margin: 0;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+
+                        &#toggle-theme-1 {
+                            opacity: 1;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .calc {
+            display: flex;
+            flex-direction: column;
+            gap:1em;
+            .calc-display {
+                text-align: right;
+                border-radius: 10px;
+                padding: 1em 0.5em;
+                p {
+                    margin: 0;
+                }
+                
+                @media (min-width:500px) {
+                    padding:1em;
+                }
+            }
+
+            .calc-keys {
+                text-transform: uppercase;
+                border-radius: 10px;
+                display: grid;
+                gap:0.25em;
+                padding:.5em;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(5, 1fr);
+                @media (min-width:500px) {
+                    gap:.5em;
+                    padding:1em;
+                }
+                .calc-key {
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0.5em;
+                    border-bottom: 5px solid;
+
+                    &#del {
+                        grid-column: 4/-1;
+                        grid-row: 1/2;
+                    }
+
+                    &#add {
+                        grid-column: 4/-1;
+                        grid-row: 2/3;
+                    }
+                    &#sub {
+                        grid-column: 4/-1;
+                        grid-row: 3/4;
+                    }
+                    &#multi {
+                        grid-column: 4/-1;
+                        grid-row: 4/5;
+                    }
+                    &#divide {
+                        grid-column: 1/2;
+                        grid-row: 4/5;
+                    }
+
+                    &#reset {
+                        grid-column:1/3
+                    }
+                    &#equal {
+                        grid-column:3/-1
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+                        opacity: 0.7;
+                    } 
+                }
+            }
+        }
+    }
+    
+}
+
+    
+
+.footer {
+    padding: 1em;
+    margin-top: auto;
+}

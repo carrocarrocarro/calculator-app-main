@@ -1,0 +1,318 @@
+*, html, body {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  font-size: 2rem;
+  padding: 0.5em;
+}
+@media (min-width: 500px) {
+  .main {
+    padding: 1em;
+  }
+}
+.main .content {
+  max-width: 600px;
+  margin: auto;
+}
+.main .content .header {
+  padding: 1em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .content .header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+.main .content .header .theme-toggle-wrapper {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5em;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+.main .content .header .theme-toggle-wrapper p {
+  margin: 0 0 0.2em;
+  letter-spacing: 1px;
+}
+.main .content .header .theme-toggle-wrapper .theme-toggle-name {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5em 0.2em 0.5em;
+}
+.main .content .header .theme-toggle-wrapper .theme-toggle-name p {
+  margin: 0;
+}
+.main .content .header .theme-toggle-wrapper .theme-toggle {
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  padding: 0.3em;
+  gap: 0.5em;
+}
+.main .content .header .theme-toggle-wrapper .theme-toggle .theme-toggle-btn {
+  height: 15px;
+  width: 15px;
+  appearance: none;
+  border-radius: 50%;
+  opacity: 0;
+  margin: 0;
+}
+.main .content .header .theme-toggle-wrapper .theme-toggle .theme-toggle-btn:hover {
+  cursor: pointer;
+}
+.main .content .header .theme-toggle-wrapper .theme-toggle .theme-toggle-btn#toggle-theme-1 {
+  opacity: 1;
+}
+.main .content .calc {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.main .content .calc .calc-display {
+  text-align: right;
+  border-radius: 10px;
+  padding: 1em 0.5em;
+}
+.main .content .calc .calc-display p {
+  margin: 0;
+}
+@media (min-width: 500px) {
+  .main .content .calc .calc-display {
+    padding: 1em;
+  }
+}
+.main .content .calc .calc-keys {
+  text-transform: uppercase;
+  border-radius: 10px;
+  display: grid;
+  gap: 0.25em;
+  padding: 0.5em;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+@media (min-width: 500px) {
+  .main .content .calc .calc-keys {
+    gap: 0.5em;
+    padding: 1em;
+  }
+}
+.main .content .calc .calc-keys .calc-key {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  border-bottom: 5px solid;
+}
+.main .content .calc .calc-keys .calc-key#del {
+  grid-column: 4/-1;
+  grid-row: 1/2;
+}
+.main .content .calc .calc-keys .calc-key#add {
+  grid-column: 4/-1;
+  grid-row: 2/3;
+}
+.main .content .calc .calc-keys .calc-key#sub {
+  grid-column: 4/-1;
+  grid-row: 3/4;
+}
+.main .content .calc .calc-keys .calc-key#multi {
+  grid-column: 4/-1;
+  grid-row: 4/5;
+}
+.main .content .calc .calc-keys .calc-key#divide {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+.main .content .calc .calc-keys .calc-key#reset {
+  grid-column: 1/3;
+}
+.main .content .calc .calc-keys .calc-key#equal {
+  grid-column: 3/-1;
+}
+.main .content .calc .calc-keys .calc-key:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.footer {
+  padding: 1em;
+  margin-top: auto;
+}
+
+/* Styling theme 1 */
+/* Backgrounds */
+/* Keys */
+/* Text */
+.theme1 {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(222deg, 26%, 31%);
+}
+.theme1 .main .content .header .theme-toggle-wrapper .theme-toggle {
+  background-color: hsl(223deg, 31%, 20%);
+}
+.theme1 .main .content .header .theme-toggle-wrapper .theme-toggle .theme-toggle-btn {
+  background-color: hsl(6deg, 63%, 50%);
+}
+.theme1 .main .content .calc .calc-display {
+  background-color: hsl(224deg, 36%, 15%);
+}
+.theme1 .main .content .calc .calc-keys {
+  background-color: hsl(223deg, 31%, 20%);
+}
+.theme1 .main .content .calc .calc-keys .calc-key {
+  background-color: hsl(30deg, 25%, 89%);
+  border-color: hsl(28deg, 16%, 65%);
+  color: hsl(221deg, 14%, 31%);
+}
+.theme1 .main .content .calc .calc-keys .calc-key#del {
+  background-color: hsl(225deg, 21%, 49%);
+  border-color: hsl(224deg, 28%, 35%);
+  color: hsl(0deg, 0%, 100%);
+}
+.theme1 .main .content .calc .calc-keys .calc-key#reset {
+  background-color: hsl(225deg, 21%, 49%);
+  border-color: hsl(224deg, 28%, 35%);
+  color: hsl(0deg, 0%, 100%);
+}
+.theme1 .main .content .calc .calc-keys .calc-key#equal {
+  background-color: hsl(6deg, 63%, 50%);
+  border-color: hsl(6deg, 70%, 34%);
+  color: hsl(0deg, 0%, 100%);
+}
+.theme1 .footer {
+  font-size: 1.2rem;
+}
+.theme1 .footer a {
+  color: hsl(6deg, 63%, 50%);
+}
+
+/* Styling theme 2 */
+/* Backgrounds */
+/* Keys */
+/* Text */
+.theme2 {
+  color: hsl(60deg, 10%, 19%);
+  background-color: hsl(0deg, 0%, 90%);
+}
+.theme2 .main .content .header .theme-toggle-wrapper .theme-toggle {
+  /* background-color: $theme1-background-color-dark-blue2; */
+}
+.theme2 .main .content .header .theme-toggle-wrapper .theme-toggle .theme-toggle-btn {
+  /* background-color: $theme1-key-color-red; */
+}
+.theme2 .main .content .calc .calc-display {
+  /* background-color: $theme1-background-color-dark-blue3; */
+}
+.theme2 .main .content .calc .calc-keys {
+  /* background-color: $theme1-background-color-dark-blue2; */
+}
+.theme2 .main .content .calc .calc-keys .calc-key {
+  /* background-color: $theme1-key-color-grey;
+  border-color: $theme1-key-shadow-color-grey;
+  color: $theme1-text-grey-blue; */
+}
+.theme2 .main .content .calc .calc-keys .calc-key#del {
+  /* background-color: $theme1-key-color-blue;
+  border-color: $theme1-key-shadow-color-blue;
+  color: $theme1-text-white */
+}
+.theme2 .main .content .calc .calc-keys .calc-key#reset {
+  /*  background-color: $theme1-key-color-blue;
+   border-color: $theme1-key-shadow-color-blue;
+   color: $theme1-text-white; */
+}
+.theme2 .main .content .calc .calc-keys .calc-key#equal {
+  /*  background-color: $theme1-key-color-red;
+   border-color: $theme1-key-shadow-color-red;
+   color: $theme1-text-white; */
+}
+.theme2 .footer {
+  font-size: 1.2rem;
+}
+.theme2 .footer a {
+  /* color: $theme1-key-color-red; */
+}
+
+/* Styling theme 3 */
+/* Backgrounds */
+/* Keys */
+/* Text */
+.theme3 {
+  /* color: $theme3-background-color-violet1; */
+  background-color: hsl(268deg, 75%, 9%);
+  /* .main {
+      .content {
+          .header {
+              .theme-toggle-wrapper {
+                 .theme-toggle {
+                      background-color: $theme1-background-color-dark-blue2;
+                      .theme-toggle-btn {
+                          background-color: $theme1-key-color-red;
+                          &#toggle-theme-1 {
+
+                          }
+                      }
+
+                 } 
+              }
+          }
+          .calc {
+              .calc-display {
+                  background-color: $theme1-background-color-dark-blue3;
+              }
+              .calc-keys {
+                  background-color: $theme1-background-color-dark-blue2;
+                  .calc-key {
+                      background-color: $theme1-key-color-grey;
+                      border-color: $theme1-key-shadow-color-grey;
+                      color: $theme1-text-grey-blue;
+
+                      &#del {
+                          background-color: $theme1-key-color-blue;
+                          border-color: $theme1-key-shadow-color-blue;
+                          color: $theme1-text-white;
+                      }
+                      &#reset {
+                          background-color: $theme1-key-color-blue;
+                          border-color: $theme1-key-shadow-color-blue;
+                          color: $theme1-text-white;
+                      }
+
+                      &#equal {
+                          background-color: $theme1-key-color-red;
+                          border-color: $theme1-key-shadow-color-red;
+                          color: $theme1-text-white;
+                      }
+                  }
+              }
+          }
+      }
+  }
+  .footer {
+      font-size: 1.2rem;
+      a {
+          color: $theme1-key-color-red;
+
+      } 
+  } */
+}
+
+/* Main style sheet */
+
+/*# sourceMappingURL=style.css.map */
