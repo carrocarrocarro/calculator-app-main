@@ -31,7 +31,13 @@ $theme1-text-white: hsl(0, 0%, 100%);
                         .theme-toggle-btn {
                             background-color: $theme1-key-color-red;
                             &#toggle-theme-1 {
-                                
+                                opacity: 1;
+                            }
+                            &#toggle-theme-2 {
+                                opacity: 0;
+                            }
+                            &#toggle-theme-3 {
+                                opacity: 0;
                             }
                         }
 

@@ -27,11 +27,17 @@ $theme2-text-white: hsl(0, 0%, 100%);
             .header {
                 .theme-toggle-wrapper {
                    .theme-toggle {
-                        /* background-color: $theme1-background-color-dark-blue2; */
+                        background-color: $theme2-background-color-gray2;
                         .theme-toggle-btn {
-                            /* background-color: $theme1-key-color-red; */
+                            background-color: $theme2-key-color-orange;
                             &#toggle-theme-1 {
-                                
+                                opacity: 0;
+                            }
+                            &#toggle-theme-2 {
+                                opacity: 1;
+                            }
+                            &#toggle-theme-3 {
+                                opacity: 0;
                             }
                         }
 
@@ -40,30 +46,30 @@ $theme2-text-white: hsl(0, 0%, 100%);
             }
             .calc {
                 .calc-display {
-                    /* background-color: $theme1-background-color-dark-blue3; */
+                    background-color: $theme2-background-color-gray3;
                 }
                 .calc-keys {
-                    /* background-color: $theme1-background-color-dark-blue2; */
+                    background-color: $theme2-background-color-gray2;
                     .calc-key {
-                        /* background-color: $theme1-key-color-grey;
-                        border-color: $theme1-key-shadow-color-grey;
-                        color: $theme1-text-grey-blue; */
+                        background-color: $theme2-key-color-gray;
+                        border-color: $theme2-key-shadow-color-gray;
+                        color: $theme2-text-grey;
                         
                         &#del {
-                            /* background-color: $theme1-key-color-blue;
-                            border-color: $theme1-key-shadow-color-blue;
-                            color: $theme1-text-white */;
+                            background-color: $theme2-key-color-dark-cyan;
+                            border-color: $theme2-key-shadow-color-dark-cyan;
+                            color: $theme2-text-white;
                         }
                         &#reset {
-                           /*  background-color: $theme1-key-color-blue;
-                            border-color: $theme1-key-shadow-color-blue;
-                            color: $theme1-text-white; */
+                            background-color: $theme2-key-color-dark-cyan;
+                            border-color: $theme2-key-shadow-color-dark-cyan;
+                            color: $theme2-text-white;
                         }
 
                         &#equal {
-                           /*  background-color: $theme1-key-color-red;
-                            border-color: $theme1-key-shadow-color-red;
-                            color: $theme1-text-white; */
+                            background-color: $theme2-key-color-orange;
+                            border-color: $theme2-key-shadow-color-orange;
+                            color: $theme2-text-white;
                         }
                     }
                 }
@@ -73,7 +79,7 @@ $theme2-text-white: hsl(0, 0%, 100%);
     .footer {
         font-size: 1.2rem;
         a {
-            /* color: $theme1-key-color-red; */
+            color: $theme2-key-color-dark-cyan;
             
         }
     } 

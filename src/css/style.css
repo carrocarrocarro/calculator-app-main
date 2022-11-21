@@ -169,6 +169,15 @@ body {
 .theme1 .main .content .header .theme-toggle-wrapper .theme-toggle .theme-toggle-btn {
   background-color: hsl(6deg, 63%, 50%);
 }
+.theme1 .main .content .header .theme-toggle-wrapper .theme-toggle .theme-toggle-btn#toggle-theme-1 {
+  opacity: 1;
+}
+.theme1 .main .content .header .theme-toggle-wrapper .theme-toggle .theme-toggle-btn#toggle-theme-2 {
+  opacity: 0;
+}
+.theme1 .main .content .header .theme-toggle-wrapper .theme-toggle .theme-toggle-btn#toggle-theme-3 {
+  opacity: 0;
+}
 .theme1 .main .content .calc .calc-display {
   background-color: hsl(224deg, 36%, 15%);
 }
@@ -211,42 +220,51 @@ body {
   background-color: hsl(0deg, 0%, 90%);
 }
 .theme2 .main .content .header .theme-toggle-wrapper .theme-toggle {
-  /* background-color: $theme1-background-color-dark-blue2; */
+  background-color: hsl(0deg, 5%, 81%);
 }
 .theme2 .main .content .header .theme-toggle-wrapper .theme-toggle .theme-toggle-btn {
-  /* background-color: $theme1-key-color-red; */
+  background-color: hsl(25deg, 98%, 40%);
+}
+.theme2 .main .content .header .theme-toggle-wrapper .theme-toggle .theme-toggle-btn#toggle-theme-1 {
+  opacity: 0;
+}
+.theme2 .main .content .header .theme-toggle-wrapper .theme-toggle .theme-toggle-btn#toggle-theme-2 {
+  opacity: 1;
+}
+.theme2 .main .content .header .theme-toggle-wrapper .theme-toggle .theme-toggle-btn#toggle-theme-3 {
+  opacity: 0;
 }
 .theme2 .main .content .calc .calc-display {
-  /* background-color: $theme1-background-color-dark-blue3; */
+  background-color: hsl(0deg, 0%, 93%);
 }
 .theme2 .main .content .calc .calc-keys {
-  /* background-color: $theme1-background-color-dark-blue2; */
+  background-color: hsl(0deg, 5%, 81%);
 }
 .theme2 .main .content .calc .calc-keys .calc-key {
-  /* background-color: $theme1-key-color-grey;
-  border-color: $theme1-key-shadow-color-grey;
-  color: $theme1-text-grey-blue; */
+  background-color: hsl(45deg, 7%, 89%);
+  border-color: hsl(35deg, 11%, 61%);
+  color: hsl(60deg, 10%, 19%);
 }
 .theme2 .main .content .calc .calc-keys .calc-key#del {
-  /* background-color: $theme1-key-color-blue;
-  border-color: $theme1-key-shadow-color-blue;
-  color: $theme1-text-white */
+  background-color: hsl(185deg, 42%, 37%);
+  border-color: hsl(185deg, 58%, 25%);
+  color: hsl(0deg, 0%, 100%);
 }
 .theme2 .main .content .calc .calc-keys .calc-key#reset {
-  /*  background-color: $theme1-key-color-blue;
-   border-color: $theme1-key-shadow-color-blue;
-   color: $theme1-text-white; */
+  background-color: hsl(185deg, 42%, 37%);
+  border-color: hsl(185deg, 58%, 25%);
+  color: hsl(0deg, 0%, 100%);
 }
 .theme2 .main .content .calc .calc-keys .calc-key#equal {
-  /*  background-color: $theme1-key-color-red;
-   border-color: $theme1-key-shadow-color-red;
-   color: $theme1-text-white; */
+  background-color: hsl(25deg, 98%, 40%);
+  border-color: hsl(25deg, 99%, 27%);
+  color: hsl(0deg, 0%, 100%);
 }
 .theme2 .footer {
   font-size: 1.2rem;
 }
 .theme2 .footer a {
-  /* color: $theme1-key-color-red; */
+  color: hsl(185deg, 42%, 37%);
 }
 
 /* Styling theme 3 */
@@ -254,63 +272,54 @@ body {
 /* Keys */
 /* Text */
 .theme3 {
-  /* color: $theme3-background-color-violet1; */
+  color: hsl(52deg, 100%, 62%);
   background-color: hsl(268deg, 75%, 9%);
-  /* .main {
-      .content {
-          .header {
-              .theme-toggle-wrapper {
-                 .theme-toggle {
-                      background-color: $theme1-background-color-dark-blue2;
-                      .theme-toggle-btn {
-                          background-color: $theme1-key-color-red;
-                          &#toggle-theme-1 {
-
-                          }
-                      }
-
-                 } 
-              }
-          }
-          .calc {
-              .calc-display {
-                  background-color: $theme1-background-color-dark-blue3;
-              }
-              .calc-keys {
-                  background-color: $theme1-background-color-dark-blue2;
-                  .calc-key {
-                      background-color: $theme1-key-color-grey;
-                      border-color: $theme1-key-shadow-color-grey;
-                      color: $theme1-text-grey-blue;
-
-                      &#del {
-                          background-color: $theme1-key-color-blue;
-                          border-color: $theme1-key-shadow-color-blue;
-                          color: $theme1-text-white;
-                      }
-                      &#reset {
-                          background-color: $theme1-key-color-blue;
-                          border-color: $theme1-key-shadow-color-blue;
-                          color: $theme1-text-white;
-                      }
-
-                      &#equal {
-                          background-color: $theme1-key-color-red;
-                          border-color: $theme1-key-shadow-color-red;
-                          color: $theme1-text-white;
-                      }
-                  }
-              }
-          }
-      }
-  }
-  .footer {
-      font-size: 1.2rem;
-      a {
-          color: $theme1-key-color-red;
-
-      } 
-  } */
+}
+.theme3 .main .content .header .theme-toggle-wrapper .theme-toggle {
+  background-color: hsl(268deg, 71%, 12%);
+}
+.theme3 .main .content .header .theme-toggle-wrapper .theme-toggle .theme-toggle-btn {
+  background-color: hsl(176deg, 100%, 44%);
+}
+.theme3 .main .content .header .theme-toggle-wrapper .theme-toggle .theme-toggle-btn#toggle-theme-1 {
+  opacity: 0;
+}
+.theme3 .main .content .header .theme-toggle-wrapper .theme-toggle .theme-toggle-btn#toggle-theme-2 {
+  opacity: 0;
+}
+.theme3 .main .content .header .theme-toggle-wrapper .theme-toggle .theme-toggle-btn#toggle-theme-3 {
+  opacity: 1;
+}
+.theme3 .main .content .calc .calc-display {
+  background-color: hsl(268deg, 71%, 12%);
+}
+.theme3 .main .content .calc .calc-keys {
+  background-color: hsl(268deg, 71%, 12%);
+}
+.theme3 .main .content .calc .calc-keys .calc-key {
+  background-color: hsl(268deg, 47%, 21%);
+  border-color: hsl(290deg, 70%, 36%);
+}
+.theme3 .main .content .calc .calc-keys .calc-key#del {
+  background-color: hsl(281deg, 89%, 26%);
+  border-color: hsl(285deg, 91%, 52%);
+  color: hsl(0deg, 0%, 100%);
+}
+.theme3 .main .content .calc .calc-keys .calc-key#reset {
+  background-color: hsl(281deg, 89%, 26%);
+  border-color: hsl(285deg, 91%, 52%);
+  color: hsl(0deg, 0%, 100%);
+}
+.theme3 .main .content .calc .calc-keys .calc-key#equal {
+  background-color: hsl(176deg, 100%, 44%);
+  border-color: hsl(177deg, 92%, 70%);
+  color: hsl(198deg, 20%, 13%);
+}
+.theme3 .footer {
+  font-size: 1.2rem;
+}
+.theme3 .footer a {
+  color: hsl(176deg, 100%, 44%);
 }
 
 /* Main style sheet */
