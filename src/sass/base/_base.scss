@@ -99,7 +99,7 @@ body {
             }
 
             .calc-keys {
-                text-transform: uppercase;
+                
                 border-radius: 10px;
                 display: grid;
                 gap:0.25em;
@@ -111,11 +111,15 @@ body {
                     padding:1em;
                 }
                 .calc-key {
+                    text-transform: uppercase;
+                    font-size: 2rem;
+                    font-family: 'League Spartan', sans-serif;
                     border-radius: 10px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     padding: 0.5em;
+                    border:none;
                     border-bottom: 5px solid;
 
                     &#del {

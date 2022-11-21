@@ -34,14 +34,5 @@ toggleBtns.forEach((button, index) => {
             body.classList.remove("theme2")
             body.classList.add("theme3")
         }
-        
-
-       /*  toggleBtns
-        .filter (function(item) {
-            return item != button
-        })
-        .forEach((item) => {
-            item.style.opactiy = "0"
-        }) */
     })
 })
